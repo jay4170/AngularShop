@@ -1,0 +1,12 @@
+
+<button class="buttonBasket" [ngClass]="!toggle ? 'hidden':'visible'" (click)="toggleBasket()">Basket</button>
+<div class="basketContainer" [ngClass]="toggle ? 'hidden':'visible'">
+  <ul>
+    <li *ngFor="let basks of basket">
+      <p>{{ basks.title }}/p</p>
+      <button (click)="removeItem(basks.id)">Remove</button>
+    </li>
+  </ul>
+  <p class="right">Total Price {{ totalValue }}</p>
+  <button  (click)="toggleBasket()">Close</button>
+</div>

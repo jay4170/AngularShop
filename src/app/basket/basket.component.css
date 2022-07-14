@@ -1,0 +1,24 @@
+.basketContainer {
+  display: none;
+  background-color: beige;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+}
+.right {
+  margin-left: 20px;
+}
+.buttonBasket {
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+}
+.visible {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
